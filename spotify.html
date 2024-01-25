@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="spotify.css" />
+    <link rel="icon" href="spotifylogo.png" />
+    <link rel="stylesheet" href="utitlity.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <div class="main flex bg-color">
+      <div class="left" >
+        <div class="home gray p-1 round m-1">
+          <img class="spoLogo" src="logo.svg" alt="logo"  />
+          <ul>
+            <li><img src="home.svg" alt="home button" class="invert" />HOME</li>
+            <li>
+              <img src="serch.svg" alt="search button" class="invert" />SEARCH
+            </li>
+          </ul>
+        </div>
+
+        <div class="libary p-1 gray m-1">
+          <div class="heading">
+            <img src="your.svg" alt="img" class="invert" />
+            <h2>Your Libary</h2>
+          </div>
+
+          <div class="songlist">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy-policy/"
+                ><span>Privacy policiy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy-policy/#s3"
+                ><span>Abouts Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right gray round">
+        <div class="header">
+          <div class="nav">
+            <span ><img class="menu invert"  src="ham.svg" alt="img"></span>
+            <svg
+              class="invert arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-left-01-stroke-rounded.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <svg
+              class="invert arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-right-01-stroke-sharp.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M9.00005 6L15 12L9 18"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-miterlimit="16"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="buttons">
+            <button class="signb">Sign up</button>
+            <button class="logbt">Log in</button>
+          </div>
+        </div>
+
+        <div class="playlist">
+          <h1>Spotify Playlist</h1>
+          <div class="moving">
+          <div class="ani"><h1>Spotify PLaylist</h1><div class="c"></div></div>
+          <div class="ani"><h1>Spotify PLaylist</h1><div class="c"></div></div>
+          <div class="ani"><h1>Spotify PLaylist</h1><div class="c"></div></div>
+          </div>
+          <div class="cardCon">
+           
+            
+          </div>
+
+          <div class="playbtt">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar">
+              <div class="songinfo">
+              
+              </div>
+              <div class="musicButton">
+                <img id="previous" width="30px" src="previous.svg" alt="previous" />
+                <img id="play" width="30px" class="play2" src="play.svg" alt="play" />
+                <img id="next" width="30px" src="next.svg" alt="next" />
+              </div>
+              <div class="ss">
+              <div class="songTime"></div>
+              <div class="sound">
+                <img class="volu" src="voloume.svg" >
+                <div class="range">
+                <input type="range" name="volume bar">
+               </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="spotify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  </body>
+</html>
